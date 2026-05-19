@@ -33,9 +33,15 @@ RUN npm run build && npm prune --omit=dev
 ENV NODE_ENV=production
 ENV HOME=/home/agent
 ENV HERMES_HOME=/home/agent/.hermes
+ENV HERMES_WEB_UI_HOME=/home/agent/.hermes-web-ui
+ENV PORT=6060
+ENV BIND_HOST=0.0.0.0
 ENV PATH=/opt/hermes/.venv/bin:$PATH
 
 EXPOSE 6060
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
+  CMD curl -fsS "http://127.0.0.1:${PORT}/health" || exit 1
 
 # 强制覆盖基础镜像的默认启动脚本，让镜像本身具备独立运行的能力
 ENTRYPOINT ["node", "dist/server/index.js"]
