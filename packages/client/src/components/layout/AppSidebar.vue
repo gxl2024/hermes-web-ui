@@ -63,8 +63,8 @@ function openChangelog() {
 <template>
   <aside class="sidebar" :class="{ open: appStore.sidebarOpen, collapsed: appStore.sidebarCollapsed }">
     <div class="sidebar-logo" @click="router.push('/hermes/chat')">
-      <img :src="logoPath" alt="Hermes" class="logo-img" />
-      <span class="logo-text">Hermes</span>
+      <img :src="logoPath" alt="AUD" class="logo-img" />
+      <span class="logo-text">AUD</span>
       <!-- <video class="logo-dance" :src="isDark ? danceVideoDark : danceVideoLight" autoplay loop muted playsinline /> -->
     </div>
 
@@ -348,10 +348,11 @@ function openChangelog() {
 }
 
 .logo-img {
-  width: 28px;
-  height: 28px;
+  width: 84px;
+  height: auto;
   border-radius: 0;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .sidebar-logo {
@@ -643,6 +644,10 @@ function openChangelog() {
     margin: 0 -8px;
     justify-content: center;
     gap: 0;
+
+    .logo-img {
+      width: 42px;
+    }
 
     .logo-text {
       display: none;

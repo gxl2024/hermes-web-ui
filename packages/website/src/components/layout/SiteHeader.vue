@@ -30,7 +30,7 @@ function goHome() {
   <header class="site-header">
     <div class="header-inner">
       <div class="header-left" @click="goHome">
-        <img src="/logo.png" alt="Hermes" class="logo-icon" />
+        <img src="/logo.png" alt="AUD" class="logo-icon" />
         <span class="logo-text">Hermes Web UI</span>
       </div>
 
@@ -152,9 +152,10 @@ function goHome() {
 }
 
 .logo-icon {
-  width: 28px;
-  height: 28px;
+  width: 110px;
+  height: auto;
   border-radius: $radius-sm;
+  object-fit: contain;
 }
 
 .logo-text {

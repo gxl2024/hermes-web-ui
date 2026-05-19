@@ -9,7 +9,7 @@ const { t } = useI18n()
     <div class="footer-inner">
       <div class="footer-left">
         <div class="footer-brand">
-          <img src="/logo.png" alt="Hermes" class="footer-logo" />
+          <img src="/logo.png" alt="AUD" class="footer-logo" />
           <span>Hermes Web UI</span>
         </div>
         <p class="footer-desc">{{ t('footer.description') }}</p>
@@ -68,9 +68,10 @@ const { t } = useI18n()
 }
 
 .footer-logo {
-  width: 24px;
-  height: 24px;
+  width: 96px;
+  height: auto;
   border-radius: $radius-sm;
+  object-fit: contain;
 }
 
 .footer-desc {

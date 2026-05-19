@@ -77,7 +77,7 @@ export default {
   },
   install: {
     title: '快速开始',
-    desc: '一分钟内启动 Hermes Web UI。',
+    desc: '一分钟内启动 AUD。',
     npm: {
       title: 'npm',
       cmd1: 'npm install -g hermes-web-ui',
@@ -99,7 +99,7 @@ export default {
     desc: '在 GitHub 上给我们加星，加入社区。',
   },
   footer: {
-    description: 'Hermes Agent 的自托管 AI 聊天仪表板。',
+    description: 'AUD 的自托管 AI 聊天仪表板。',
     license: 'BSL-1.1 开源协议',
     madeWith: '使用 Vue 3、Naive UI 和 TypeScript 构建。',
   },
@@ -113,14 +113,14 @@ export default {
     },
     gettingStarted: {
       title: '快速开始',
-      intro: 'Hermes Web UI 是一个自托管的 Web 仪表板，用于管理 AI 对话、平台通道、定时任务等。它封装了 Hermes Agent CLI 并提供美观的 Web 界面。',
+      intro: 'AUD 是一个自托管的 Web 仪表板，用于管理 AI 对话、平台通道、定时任务等。它封装了 AUD CLI 并提供美观的 Web 界面。',
       install: {
         title: '安装',
         content: '通过 npm 全局安装。需要 Node.js 23 或更高版本。',
       },
       firstRun: {
         title: '首次运行',
-        content: '首次启动时，Hermes Web UI 会自动生成认证令牌、验证配置文件、启动 Hermes 网关并在浏览器中打开仪表板。',
+        content: '首次启动时，AUD 会自动生成认证令牌、验证配置文件、启动 AUD 网关并在浏览器中打开仪表板。',
       },
       login: {
         title: '登录',
@@ -129,7 +129,7 @@ export default {
     },
     configuration: {
       title: '配置说明',
-      intro: 'Hermes Web UI 可通过环境变量进行配置。',
+      intro: 'AUD 可通过环境变量进行配置。',
       envVars: {
         title: '环境变量',
         rows: [
@@ -144,16 +144,16 @@ export default {
       },
       gateway: {
         title: '网关管理',
-        content: '网关是处理 AI 对话的 Hermes Agent 进程。Hermes Web UI 管理网关生命周期——在网关页面启动、停止和监控。不同配置可运行多个网关，且每个 profile 都会从各自的 Hermes 配置中解析网关 host/port。',
+        content: '网关是处理 AI 对话的 AUD 进程。AUD 管理网关生命周期——在网关页面启动、停止和监控。不同配置可运行多个网关，且每个 profile 都会从各自的 AUD 配置中解析网关 host/port。',
       },
       profiles: {
         title: '配置文件',
-        content: '配置文件为不同场景提供隔离的配置。每个配置文件拥有独立的 Hermes 配置、缓存和网关。可在配置页面创建、克隆、导入或导出配置文件。',
+        content: '配置文件为不同场景提供隔离的配置。每个配置文件拥有独立的 AUD 配置、缓存和网关。可在配置页面创建、克隆、导入或导出配置文件。',
       },
     },
     features: {
       title: '功能详解',
-      intro: '探索 Hermes Web UI 的核心功能。',
+      intro: '探索 AUD 的核心功能。',
       chat: {
         title: 'AI 聊天',
         content: '通过 Socket.IO /chat-run 实时流式聊天。支持多会话管理、Markdown 渲染与语法高亮、工具调用检查、文件上传/下载，以及 Ctrl+K 搜索 Web UI 本地会话库。',
@@ -229,14 +229,14 @@ export default {
     },
     api: {
       title: 'API 参考',
-      intro: 'Hermes Web UI 提供本地 BFF API 并代理请求到上游 Hermes 网关。',
+      intro: 'AUD 提供本地 BFF API 并代理请求到上游 AUD 网关。',
       local: {
         title: '本地 BFF 端点',
-        content: 'Koa 服务器处理会话管理、配置文件 CRUD、配置读写、日志访问、技能列表和记忆操作。这些端点直接调用 Hermes CLI。',
+        content: 'Koa 服务器处理会话管理、配置文件 CRUD、配置读写、日志访问、技能列表和记忆操作。这些端点直接调用 AUD CLI。',
       },
       proxy: {
         title: '网关代理',
-        content: '对 /api/hermes/v1/* 的请求会转发到 Hermes 网关。包括 AI 模型交互、运行管理和流式事件。',
+        content: '对 /api/hermes/v1/* 的请求会转发到 AUD 网关。包括 AI 模型交互、运行管理和流式事件。',
       },
       auth: {
         title: '认证',

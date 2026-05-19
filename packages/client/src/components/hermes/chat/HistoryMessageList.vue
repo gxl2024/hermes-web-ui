@@ -96,7 +96,7 @@ watch(
 <template>
   <div ref="listRef" class="message-list">
     <div v-if="!activeSession || activeSession.messages.length === 0" class="empty-state">
-      <img src="/logo.png" alt="Hermes" class="empty-logo" />
+      <img src="/logo.png" alt="AUD" class="empty-logo" />
       <p>{{ t("chat.emptyState") }}</p>
     </div>
     <MessageItem
@@ -135,8 +135,8 @@ watch(
   gap: 12px;
 
   .empty-logo {
-    width: 48px;
-    height: 48px;
+    width: 160px;
+    height: auto;
     opacity: 0.25;
   }
 

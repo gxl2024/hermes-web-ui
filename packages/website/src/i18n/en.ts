@@ -77,7 +77,7 @@ export default {
   },
   install: {
     title: 'Quick Start',
-    desc: 'Get Hermes Web UI running in under a minute.',
+    desc: 'Get AUD running in under a minute.',
     npm: {
       title: 'npm',
       cmd1: 'npm install -g hermes-web-ui',
@@ -99,7 +99,7 @@ export default {
     desc: 'Star us on GitHub and join the community.',
   },
   footer: {
-    description: 'Self-hosted AI chat dashboard for Hermes Agent.',
+    description: 'Self-hosted AI chat dashboard for AUD.',
     license: 'BSL-1.1 License',
     madeWith: 'Built with Vue 3, Naive UI, and TypeScript.',
   },
@@ -113,14 +113,14 @@ export default {
     },
     gettingStarted: {
       title: 'Getting Started',
-      intro: 'Hermes Web UI is a self-hosted web dashboard for managing AI conversations, platform channels, scheduled jobs, and more. It wraps the Hermes Agent CLI and provides a beautiful web interface.',
+      intro: 'AUD is a self-hosted web dashboard for managing AI conversations, platform channels, scheduled jobs, and more. It wraps the AUD CLI and provides a beautiful web interface.',
       install: {
         title: 'Installation',
         content: 'Install globally via npm. Node.js 23 or higher is required.',
       },
       firstRun: {
         title: 'First Run',
-        content: 'On first start, Hermes Web UI will automatically generate an auth token, validate configuration files, start the Hermes gateway, and open the dashboard in your browser.',
+        content: 'On first start, AUD will automatically generate an auth token, validate configuration files, start the AUD gateway, and open the dashboard in your browser.',
       },
       login: {
         title: 'Login',
@@ -129,7 +129,7 @@ export default {
     },
     configuration: {
       title: 'Configuration',
-      intro: 'Hermes Web UI can be configured via environment variables.',
+      intro: 'AUD can be configured via environment variables.',
       envVars: {
         title: 'Environment Variables',
         rows: [
@@ -144,16 +144,16 @@ export default {
       },
       gateway: {
         title: 'Gateway Management',
-        content: 'The gateway is the Hermes Agent process that handles AI conversations. Hermes Web UI manages the gateway lifecycle — start, stop, and monitor from the Gateways page. Multiple gateways can run with different profiles, and each profile resolves its own gateway host/port from its Hermes config.',
+        content: 'The gateway is the AUD process that handles AI conversations. AUD manages the gateway lifecycle — start, stop, and monitor from the Gateways page. Multiple gateways can run with different profiles, and each profile resolves its own gateway host/port from its AUD config.',
       },
       profiles: {
         title: 'Profiles',
-        content: 'Profiles provide isolated configurations for different use cases. Each profile has its own Hermes config, cache, and gateway. Create, clone, import, or export profiles from the Profiles page.',
+        content: 'Profiles provide isolated configurations for different use cases. Each profile has its own AUD config, cache, and gateway. Create, clone, import, or export profiles from the Profiles page.',
       },
     },
     features: {
       title: 'Features',
-      intro: 'Explore the core features of Hermes Web UI.',
+      intro: 'Explore the core features of AUD.',
       chat: {
         title: 'AI Chat',
         content: 'Real-time chat streaming over Socket.IO /chat-run. Supports multi-session management, Markdown rendering with syntax highlighting, tool call inspection, file upload/download, and Ctrl+K search across the Web UI local session database.',
@@ -229,14 +229,14 @@ export default {
     },
     api: {
       title: 'API Reference',
-      intro: 'Hermes Web UI provides both a local BFF API and proxies requests to the upstream Hermes gateway.',
+      intro: 'AUD provides both a local BFF API and proxies requests to the upstream AUD gateway.',
       local: {
         title: 'Local BFF Endpoints',
-        content: 'The Koa server handles session management, profile CRUD, config read/write, log access, skill listing, and memory operations. These endpoints call the Hermes CLI directly.',
+        content: 'The Koa server handles session management, profile CRUD, config read/write, log access, skill listing, and memory operations. These endpoints call the AUD CLI directly.',
       },
       proxy: {
         title: 'Gateway Proxy',
-        content: 'Requests to /api/hermes/v1/* are forwarded to the Hermes gateway. This includes AI model interactions, run management, and streaming events.',
+        content: 'Requests to /api/hermes/v1/* are forwarded to the AUD gateway. This includes AI model interactions, run management, and streaming events.',
       },
       auth: {
         title: 'Authentication',

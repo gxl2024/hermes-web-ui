@@ -774,7 +774,7 @@ onBeforeUnmount(() => {
         <img
           v-if="message.role === 'assistant'"
           src="/logo.png"
-          alt="Hermes"
+          alt="AUD"
           class="msg-avatar"
         />
         <div class="msg-content" :class="message.role">
@@ -1023,10 +1023,11 @@ onBeforeUnmount(() => {
     }
 
     .msg-avatar {
-      width: 40px;
-      height: 40px;
+      width: 48px;
+      height: 32px;
       flex-shrink: 0;
       margin-top: 2px;
+      object-fit: contain;
     }
 
     .message-bubble {
